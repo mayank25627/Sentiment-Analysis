@@ -55,7 +55,7 @@ def generatePredection(text):
     return X_pred_transform
 
 
-def predectionGenerationAndPrint(X_pred_transform):   
+def predectionGenerationAndPrint(X_pred_transform):
     predictions = loaded_model.predict(X_pred_transform)
 
     for prediction in predictions:
@@ -66,14 +66,14 @@ def predectionGenerationAndPrint(X_pred_transform):
 
 
 # Write text on which you to predict output on.
-text = "But when i am with you i feel happy very Happy"
+text = "It is a very nice place"
 
 preprocess_text_output = preprocess_text(text)
 X_pred_transform = generatePredection(preprocess_text_output)
 finalOutput = predectionGenerationAndPrint(X_pred_transform)
 
 
-#Final Output result printed
+# Final Output result printed
 print(finalOutput)
 
 
